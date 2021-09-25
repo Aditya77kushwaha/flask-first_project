@@ -1,0 +1,19 @@
+<table class='table table-responsive table-striped'>
+    <thead>
+        <tr>
+            {% for x in cols %}
+            <td> {{x}} </td>
+            {% endfor %}
+        </tr>
+    </thead>
+    <tbody>
+        {% for line in maindata %}
+        <tr>
+            {% for item in line %}
+            <td>{{item}}</td>
+            {% endfor %}
+        </tr>
+        {% endfor %}
+
+    </tbody>
+</table>
